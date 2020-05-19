@@ -1,0 +1,228 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 14,
+        "name": "validate the login functionality",
+        "description": "",
+        "id": "orangehrm-website;validate-the-login-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11952988500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Launch the browser and enter the url",
+            "match": {
+              "location": "orangehrmloginstep.launch_the_browser_and_enter_the_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1152405400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Login page is opened",
+            "match": {
+              "location": "orangehrmloginstep.login_page_is_opened()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1334499500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter \"Admin\" and \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 7
+                },
+                {
+                  "val": "admin123",
+                  "offset": 19
+                }
+              ],
+              "location": "orangehrmloginstep.enter_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 532200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click the login Button",
+            "match": {
+              "location": "orangehrmloginstep.click_the_login_Button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@tc_01_login"
+          },
+          {
+            "line": 1,
+            "name": "@orangeHRM"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Enter values in Admin page",
+        "description": "",
+        "id": "orangehrm-website;enter-values-in-admin-page;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1158511700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click on Admin",
+            "match": {
+              "location": "orangehrmloginstep1.click_on_Admin()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 203961200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Enter username \"hannah.flores\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hannah.flores",
+                  "offset": 16
+                }
+              ],
+              "location": "orangehrmloginstep1.enter_username(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 247884900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Enter userrole \"ESS\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ESS",
+                  "offset": 16
+                }
+              ],
+              "location": "orangehrmloginstep1.enter_userrole(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 232390400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Enter Employeename \"Hannah Flores\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hannah Flores",
+                  "offset": 20
+                }
+              ],
+              "location": "orangehrmloginstep1.enter_Employeename(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 172085100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Select Status \"Enabled\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Enabled",
+                  "offset": 15
+                }
+              ],
+              "location": "orangehrmloginstep1.select_Status(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 438381800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Click on search button",
+            "match": {
+              "location": "orangehrmloginstep1.click_on_search_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@tc_01_admin"
+          },
+          {
+            "line": 1,
+            "name": "@orangeHRM"
+          }
+        ]
+      }
+    ],
+    "name": "OrangeHRM Website",
+    "description": "",
+    "id": "orangehrm-website",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/Testcase.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@orangeHRM"
+      }
+    ]
+  }
+]
